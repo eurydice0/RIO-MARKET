@@ -91,7 +91,7 @@ export default function Dashboard({ constructor }) {
     return (
         <>
             <Head>
-                <title>CookiePOS | Dashboard</title>
+                <title>RIO-MARKET | Dashboard</title>
             </Head>
             <GlobalDataProvider>
                 <div className="flex flex-col">
@@ -177,7 +177,7 @@ export default function Dashboard({ constructor }) {
                                         <div className="card-body">
                                             <h2 className="card-title">Welcome!</h2>
                                             <p>
-                                                Welcome to CookiePOS, a free and open
+                                                Welcome to RIO-MARKET, a free and open
                                                 source point of sales app!
                                             </p>
                                             <div className="card-actions justify-end">
@@ -371,7 +371,7 @@ export default function Dashboard({ constructor }) {
                         <pre data-prefix="" className="opacity-50"><code>- Export history to xlsx format</code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Custom themes!</code></pre>
                         <pre data-prefix=">" className=""><code>V1.0 <span className='opacity-20'> - 7 Sep 2022 - </span></code></pre>
-                        <pre data-prefix="" className="opacity-50"><code>- Welcome To CookiePOS!</code></pre>
+                        <pre data-prefix="" className="opacity-50"><code>- Welcome To RIO-MARKET!</code></pre>
                     </div>
                 </div>
             </GlobalDataProvider>

@@ -115,7 +115,7 @@ export default function History() {
     return (
         <>
             <Head>
-                <title>CookiePOS | History</title>
+                <title> RIO-MARKET | History</title>
             </Head>
             <GlobalDataProvider>
                 <div className="pt-4 flex flex-col">
