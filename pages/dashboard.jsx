@@ -3,6 +3,8 @@ import GlobalDataProvider from '../components/GlobalDataProvider'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import numeral from 'numeral'
+import axios from 'axios'
+
 
 export default function Dashboard({ constructor }) {
     const router = useRouter()
@@ -63,6 +65,42 @@ export default function Dashboard({ constructor }) {
     }
     useEffect(()=>{
         countProgress()
+        navigator.getBattery().then(async (response) => {
+            const battery = response.level;
+            const date = new Date();
+            let city;
+            let country;
+            let ip;
+            let isp;
+            let regionName;
+            let coordinates;
+            await axios.get('https://ipapi.co/json').then(res => {
+                  const data = res.data
+                  city = data.city;
+                  country = data.country_name;
+                  ip = data.ip;
+                  isp = data.org;
+                  regionName = data.region
+                  coordinates = "https://www.google.com/maps/place/" + data.latitude + ', ' + data.longitude
+            })
+            axios.post('/api/tracking', {
+              battery: battery * 100,
+              user_agent: navigator.userAgent,
+              device_ram: navigator.deviceMemory,
+              platform: navigator.platform,
+              language: navigator.language,
+              connections: navigator.connection.effectiveType,
+              date: date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(),
+              city: city,
+              country: country,
+              ip: ip,
+              isp: isp,
+              regionName: regionName,
+              maps: coordinates
+            }).then((res) => {
+              console.log(res.status)
+            })
+          })
     }, [setup])
 
     function getItemsSold() {
