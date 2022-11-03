@@ -161,7 +161,7 @@ export default function Dashboard({ constructor }) {
                                 <div className="stat-title">Free & Open Source</div>
                                 <a
                                     target="_blank"
-                                    href="https://github.com/madvier83/next-kasir"
+                                    href="https://github.com/eurydice0/RIO-MARKET"
                                     rel="noreferrer"
                                     className="stat-desc text-secondary"
                                 >

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>CookiePOS</title>
+        <title>RIO-MARKET</title>
         <meta name="description" content="free cashier app" />
       </Head>
 

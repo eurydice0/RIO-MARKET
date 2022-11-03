@@ -244,7 +244,7 @@ export default function Order() {
     return (
         <>
             <Head>
-                <title>CookiePOS | Order</title>
+                <title>RIO-MARKET | Order</title>
             </Head>
             <GlobalDataProvider>
                 <div className="p-2 flex md:flex-row flex-col-reverse justify-between">

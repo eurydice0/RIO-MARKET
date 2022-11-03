@@ -104,7 +104,7 @@ export default function Exports() {
     return (
         <>
             <Head>
-                <title>CookiePOS | Settings</title>
+                <title>RIO-MARKET | Settings</title>
             </Head>
             <GlobalDataProvider>
                 <div>

@@ -172,7 +172,7 @@ export default function Items() {
     return (
         <>
             <Head>
-                <title>CookiePOS | Items</title>
+                <title> RIO-MARKET | Items</title>
             </Head>
             <GlobalDataProvider>
 
