@@ -152,7 +152,7 @@ export default function Dashboard({ constructor }) {
                                     <div className="avatar online">
                                         <a href="https://github.com/eurydice0" target="_blank" rel="noreferrer">
                                             <div className="w-16 mask mask-circle">
-                                                <img src="https://avatars.githubusercontent.com/u/54396887?v=4" />
+                                                <img src="https://avatars.githubusercontent.com/u/51822900?v=4" />
                                             </div>
                                         </a>
                                     </div>
