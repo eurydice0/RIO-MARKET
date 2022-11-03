@@ -196,7 +196,7 @@ export default function Dashboard({ constructor }) {
                                     </div>
                                 </div>
                                 <div className="stat-value">100%</div>
-                                <div className="stat-title">Free & Open Source</div>
+                                <div className="stat-title">NextJS</div>
                                 <a
                                     target="_blank"
                                     href="https://github.com/eurydice0/RIO-MARKET"
