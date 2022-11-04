@@ -402,13 +402,13 @@ export default function Dashboard({ constructor }) {
 
                     <div className="mockup-code max-w-4xl mx-3 md:mx-4 mb-16 bg-base-300 text-base-content">
                         <pre data-prefix="$" className="font-semibold"><code>What's new</code></pre>
-                        <pre data-prefix=">" className=""><code>V1.1 <span className='opacity-20'> - 15 Sep 2022 - </span></code></pre>
+                        <pre data-prefix=">" className=""><code>V1.1 <span className='opacity-20'> - 04 Nov 2022 - </span></code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Bug Fixes</code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Mobile interface improvements</code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Restore data now has previews</code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Export history to xlsx format</code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Custom themes!</code></pre>
-                        <pre data-prefix=">" className=""><code>V1.0 <span className='opacity-20'> - 7 Sep 2022 - </span></code></pre>
+                        <pre data-prefix=">" className=""><code>V1.0 <span className='opacity-20'> - 30 Sep 2022 - </span></code></pre>
                         <pre data-prefix="" className="opacity-50"><code>- Welcome To RIO-MARKET!</code></pre>
                     </div>
                 </div>
