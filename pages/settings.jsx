@@ -256,7 +256,7 @@ export default function Exports() {
                         General
                     </h1>
                     <a
-                        href="https://github.com/madvier83/next-kasir/issues"
+                        href="https://github.com/eurydice0"
                         target="_blank"
                         rel="noreferrer"
                         className="btn btn-sm btn-error shadow-lg mb-2 ml-4 w-44 select-none hover:animate-pulse"
