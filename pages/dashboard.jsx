@@ -1,3 +1,4 @@
+// [Package] Library yang di pakai
 import React, { useEffect, useState } from 'react'
 import GlobalDataProvider from '../components/GlobalDataProvider'
 import Head from 'next/head'
@@ -5,7 +6,7 @@ import { useRouter } from 'next/router'
 import numeral from 'numeral'
 import axios from 'axios'
 
-
+// [Main Function] fungsi untuk page dashhboard
 export default function Dashboard({ constructor }) {
     const router = useRouter()
     const [stargazer, setStargazer] = useState(0)
@@ -19,6 +20,7 @@ export default function Dashboard({ constructor }) {
     const [progress, setProgress] = useState(0)
     const [history, setHistory] = useState([])
 
+    // [Loading] Fungsi untuk rendering loading dashboard
     function checkProgress() {
         let categories = JSON.parse(window.localStorage.getItem('categories'))
         if (categories?.length > 0) {
@@ -126,6 +128,7 @@ export default function Dashboard({ constructor }) {
         getStar()
     }, [])
 
+    // [Display] Rendering tampilan dashboard
     return (
         <>
             <Head>
