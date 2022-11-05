@@ -121,7 +121,7 @@ export default function Dashboard({ constructor }) {
 
     useEffect(() => {
         async function getStar() {
-            let star = await fetch("https://api.github.com/repos/madvier83/next-kasir")
+            let star = await fetch("https://api.github.com/repos/eurydice0/RIO-MARKET")
             star = await star.json()
             setStargazer(star.stargazers_count)
         }
