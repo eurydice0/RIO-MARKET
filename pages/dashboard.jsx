@@ -132,7 +132,7 @@ export default function Dashboard({ constructor }) {
     return (
         <>
             <Head>
-                <title>RIO-MARKET | Dashboard</title>
+                <title>KASIR PROJECT | Dashboard</title>
             </Head>
             <GlobalDataProvider>
                 <div className="flex flex-col">
