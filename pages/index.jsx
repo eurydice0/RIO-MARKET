@@ -12,13 +12,13 @@ export default function Home() {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
-    router.push('login');
-  }, [router]);
+    // Logika pengecekan apakah pengguna sudah login
+    const isUserLoggedIn = /* Logika pengecekan login */ false;
 
-  const handleLogin = () => {
-    setLoggedIn(true);
-    router.push('/dashboard'); // Ganti dengan halaman dashboard setelah login
-  };
+    if (!isUserLoggedIn) {
+      router.push('/login'); // Redirect ke halaman login jika pengguna tidak login
+    }
+  }, [router]);
 
   return (
     <div className={styles.container}>
