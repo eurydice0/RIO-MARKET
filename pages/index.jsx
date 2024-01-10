@@ -1,32 +1,14 @@
-// index.js
-
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import Login from './Login';
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 export default function Home() {
-  const router = useRouter();
-  const [isLoggedIn, setLoggedIn] = useState(false);
-
-  // Fungsi untuk menangani login
-  const handleLogin = () => {
-    // Lakukan logika login yang diperlukan
-    // Setelah berhasil login, perbarui state isLoggedIn menjadi true
-    setLoggedIn(true);
-  };
-
-  useEffect(() => {
-    // Logika pengecekan apakah pengguna sudah login
-    const isUserLoggedIn = /* Logika pengecekan login */ false;
-
-    if (!isUserLoggedIn) {
-      router.push('/login'); // Redirect ke halaman login jika pengguna tidak login
-    }
-  }, [router]);
-
+  const router = useRouter()
+  useEffect(()=>{
+    router.push("dashboard")
+  },[])
   return (
     <div className={styles.container}>
       <Head>
@@ -35,15 +17,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {isLoggedIn ? (
-          <>
-            <h1 className={styles.title}>Selamat datang di dashboard!</h1>
-            {/* Tambahkan navigasi atau konten dashboard di sini */}
-          </>
-        ) : (
-          <Login onLogin={handleLogin} />
-        )}
+        <h1 className={styles.title}>
+          Loading dashboard...
+        </h1>
       </main>
     </div>
-  );
+  )
 }

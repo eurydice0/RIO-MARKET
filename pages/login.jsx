@@ -1,45 +1,32 @@
+// src/Login.js
 import React, { useState } from 'react';
 
-const Login = ({ onLogin }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+const Login = () => {
+  const [username, setUsername] = useState('admin');
+  const [password, setPassword] = useState('admmin');
 
-  const handleLogin = (event) => {
-    event.preventDefault();
-    // Lakukan validasi atau autentikasi di sini (contoh sederhana)
-    if (username && password) {
-      // Kirim informasi login ke parent component
-      onLogin({ username, password });
-    } else {
-      alert('Username dan password harus diisi');
-    }
+  const handleLogin = () => {
+    // Implement logic untuk proses login di sini
+    console.log(`Username: ${username}, Password: ${password}`);
   };
 
   return (
-    <div className="login-container">
-      <h1>Login</h1>
-      <form onSubmit={handleLogin}>
-        <div className="form-control">
-          <label>
-            Username:
-            <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-          </label>
-        </div>
-        <div className="form-control">
-          <label>
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </label>
-        </div>
-        <button type="submit">Login</button>
+    <div>
+      <h2>Login</h2>
+      <form>
+        <label>
+          Username:
+          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Password:
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </label>
+        <br />
+        <button type="button" onClick={handleLogin}>
+          Login
+        </button>
       </form>
     </div>
   );
