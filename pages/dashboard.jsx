@@ -7,18 +7,6 @@ import numeral from 'numeral'
 import axios from 'axios'
 
 
-export default function Dashboard() {
-    const router = useRouter();
-  
-    useEffect(() => {
-      // Logika pengecekan apakah pengguna sudah login
-      const isUserLoggedIn = /* Logika pengecekan login */true;
-  
-      if (!isUserLoggedIn) {
-        router.push('login');
-      }
-    }, []);
-
 // [Main Function] fungsi untuk page dashhboard
 export default function Dashboard({ constructor }) {
     const router = useRouter()
@@ -28,7 +16,17 @@ export default function Dashboard({ constructor }) {
         items: false,
         history: false,
         backup: false,
-    }
+    };
+
+    useEffect(() => {
+        // Logika pengecekan apakah pengguna sudah login
+        const isUserLoggedIn = /* Logika pengecekan login */true;
+    
+        if (!isUserLoggedIn) {
+          router.push('login');
+        }
+      }, [router]);
+  
     const [setup, setSetup] = useState(firstSetup)
     const [progress, setProgress] = useState(0)
     const [history, setHistory] = useState([])
