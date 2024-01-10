@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     router.push('login');
-  }, []);
+  }, [router]);
 
   const handleLogin = () => {
     setLoggedIn(true);
