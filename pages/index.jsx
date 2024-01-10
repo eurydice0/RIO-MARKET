@@ -12,9 +12,7 @@ export default function Home() {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Tambahkan logika untuk memeriksa apakah pengguna sudah login
-    // Contoh sederhana: anggap pengguna belum login
-    setLoggedIn(false);
+    router.push('login');
   }, []);
 
   const handleLogin = () => {

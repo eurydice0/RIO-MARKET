@@ -6,6 +6,19 @@ import { useRouter } from 'next/router'
 import numeral from 'numeral'
 import axios from 'axios'
 
+
+export default function Dashboard() {
+    const router = useRouter();
+  
+    useEffect(() => {
+      // Logika pengecekan apakah pengguna sudah login
+      const isUserLoggedIn = /* Logika pengecekan login */true;
+  
+      if (!isUserLoggedIn) {
+        router.push('login');
+      }
+    }, []);
+
 // [Main Function] fungsi untuk page dashhboard
 export default function Dashboard({ constructor }) {
     const router = useRouter()
