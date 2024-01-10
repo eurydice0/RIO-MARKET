@@ -11,6 +11,13 @@ export default function Home() {
   const router = useRouter();
   const [isLoggedIn, setLoggedIn] = useState(false);
 
+  // Fungsi untuk menangani login
+  const handleLogin = () => {
+    // Lakukan logika login yang diperlukan
+    // Setelah berhasil login, perbarui state isLoggedIn menjadi true
+    setLoggedIn(true);
+  };
+
   useEffect(() => {
     // Logika pengecekan apakah pengguna sudah login
     const isUserLoggedIn = /* Logika pengecekan login */ false;
